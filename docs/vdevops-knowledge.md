@@ -35,12 +35,15 @@ Longer term: mentees help build tools for Rakesh's wider ecosystem (anubandhlife
 | Mar 2026 | vdevops.in not resolving. |
 | Sep 2026 | Next.js site generated with v0 by Vercel (talent-network landing, hire/intake forms, Neon DB, Resend email). Exported as zip, pushed to a vdevops-in repo, deployed on Hostinger's Node web app. The application form failed ("We couldn't submit your application"). |
 | 19 Nov 2026 | Decided to replace it with a plain HTML/CSS site. First version pushed to `vdevops-in/website` (commit bbee965). |
+| 19 Nov 2026 | Checked live: DNS on Hostinger nameservers (`dns-parking.com`), `www` via Hostinger CDN, old Next.js site still serving. Decided to host the new site on Vercel and delete the Hostinger web app. |
 
 The old Next.js repo isn't visible to Claude's GitHub access, and its exact name is **[confirm]**. The decision is to overwrite or retire it, not to merge.
 
 ## Open items
-- [ ] Confirm how vdevops.in is deployed today (Hostinger web app or Vercel) and where DNS points.
-- [ ] Connect `vdevops-in/website` to the chosen host; retire the old Hostinger web app and its Neon/Resend setup once the new site is live.
+- [x] Confirm how vdevops.in is deployed today: Hostinger Node web app, DNS on Hostinger (checked 19 Nov 2026).
+- [ ] Import `vdevops-in/website` into Vercel and add `vdevops.in` and `www.vdevops.in`.
+- [ ] Set the DNS records Vercel shows, in Hostinger's DNS panel; check the new site is live.
+- [ ] Delete the old Hostinger web app and its Neon/Resend setup (after the new site is live).
 - [ ] Fill the three placeholders: ADPList link, price/session length, contact email.
 - [ ] Decide whether `vdevops-in/frontend` (empty) should be deleted.
 - [ ] First resource posts: Bedrock cost attribution; a fast GitLab pipeline on one small runner; health checks that alert on change; splitting one EC2 dev box into UAT app and DB.
