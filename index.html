@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>vdevops — learn DevOps from people who run production</title>
+  <meta name="description" content="vdevops is a DevOps learning hub and network: mentoring from a working DevOps lead, practical resources, and a way for companies to hire people who have actually done the work.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <meta property="og:title" content="vdevops — learn DevOps from people who run production">
+  <meta property="og:description" content="Mentoring, real assignments and a hiring network for DevOps engineers.">
+  <meta property="og:url" content="https://vdevops.in/">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="/" aria-label="vdevops home"><span class="mark">v</span>devops</a>
+      <nav aria-label="Main">
+        <a href="#mentoring">Mentoring</a>
+        <a href="#companies">Hire</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">DevOps hub · mentoring · network</p>
+        <h1>Learn DevOps from someone who runs production.</h1>
+        <p class="lead">vdevops is where DevOps engineers learn by doing real work, share what they know, and get hired by companies that need people who have actually shipped. Built by a DevOps lead with 15+ years across Linux, AWS and CI/CD.</p>
+        <div class="cta-row">
+          <a class="btn" href="#mentoring">Book a mentoring session</a>
+          <a class="btn btn-ghost" href="#companies">Hire from the network</a>
+        </div>
+        <ul class="proof" aria-label="Background">
+          <li>AWS Solutions Architect</li>
+          <li>Certified Kubernetes Administrator</li>
+          <li>15+ years in operations and DevOps</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap grid-3">
+        <div>
+          <h3>Learn by doing</h3>
+          <p>Every mentee works on real assignments: pipelines, servers, monitoring, cost reports. Not quizzes.</p>
+        </div>
+        <div>
+          <h3>Share what you know</h3>
+          <p>Write up what you solved. The best runbooks and guides get published here with your name on them.</p>
+        </div>
+        <div>
+          <h3>Get found</h3>
+          <p>Companies looking for DevOps people come here first. Your assignments are your portfolio.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="mentoring" class="section">
+      <div class="wrap">
+        <h2>Mentoring</h2>
+        <p class="section-lead">Start with a free group session to see if the style suits you. Continue one-to-one if it does.</p>
+        <div class="cards">
+          <article class="card">
+            <p class="tag">Free</p>
+            <h3>Group session</h3>
+            <p>DevOps basics and a realistic roadmap for moving into DevOps from development, support or sysadmin work. Bring your questions.</p>
+            <ul class="ticks">
+              <li>Online, about an hour</li>
+              <li>Open Q&amp;A at the end</li>
+            </ul>
+            <a class="btn btn-ghost" href="https://adplist.org" data-todo="ADPList profile link">Join the next session</a>
+          </article>
+          <article class="card card-feature">
+            <p class="tag">Paid</p>
+            <h3>One-to-one mentoring</h3>
+            <p>A plan built around where you are now, weekly sessions, and real assignments reviewed line by line.</p>
+            <ul class="ticks">
+              <li>Linux, AWS, CI/CD, containers, monitoring</li>
+              <li>Assignments on real infrastructure problems</li>
+              <li>Resume and interview preparation</li>
+            </ul>
+            <p class="price" data-todo="price and session length">Price on request</p>
+            <a class="btn" href="#contact">Apply for mentoring</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="companies" class="section section-alt">
+      <div class="wrap split">
+        <div>
+          <h2>For companies</h2>
+          <p class="section-lead">Need a DevOps engineer, or a hand with a specific problem? Hire from people whose work you can see.</p>
+        </div>
+        <ul class="list">
+          <li><strong>Hire from the network.</strong> Engineers with reviewed, real-world assignments behind them.</li>
+          <li><strong>Consulting.</strong> AWS cost and architecture reviews, CI/CD speed-ups, LLM usage and cost attribution on Bedrock, monitoring that only alerts when it matters.</li>
+          <li><strong>Short engagements.</strong> Fixed-scope work with a written handover.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="resources" class="section">
+      <div class="wrap">
+        <h2>Resources</h2>
+        <p class="section-lead">Practical write-ups from real production work. First posts are on the way.</p>
+        <ul class="resources">
+          <li><span class="soon">Soon</span> Tracking Bedrock token usage and cost per application</li>
+          <li><span class="soon">Soon</span> Making a GitLab pipeline fast on a single small runner</li>
+          <li><span class="soon">Soon</span> Health checks that alert on change, not on every failure</li>
+          <li><span class="soon">Soon</span> Splitting one EC2 dev box into UAT app and DB servers</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="wrap contact">
+        <h2>Contact</h2>
+        <p class="section-lead">For mentoring, hiring or consulting, write with a line about what you need.</p>
+        <a class="btn" href="mailto:hello@vdevops.in" data-todo="contact email">hello@vdevops.in</a>
+        <p class="small">Based in Goa, India. Working with people and teams anywhere.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <span>© <span id="y">2026</span> vdevops</span>
+      <a href="https://rakeshverma.org">rakeshverma.org</a>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
