@@ -5,7 +5,7 @@ Code for the public site **vdevops.in**. Owner: Rakesh Verma (DevOps lead, 15+ y
 ## Pipeline
 - **Source of truth:** GitHub `vdevops-in/website`, branch `main`.
 - **Change flow:** edit locally → test → commit → push. Small copy fixes go straight to `main`. Anything larger goes on a branch with a PR.
-- **Deploy target:** Vercel (static, no build), decided 19 Nov 2026. Not connected yet: until Rakesh confirms it is, a push does not go live.
+- **Deploy target:** Vercel (static, no build), decided 19 Nov 2026. Repo connected to Vercel (23 Nov 2026): `main` is production, other branches get preview URLs. The domain is not pointed at Vercel yet, so vdevops.in still shows the old site until DNS is switched.
 - **Domain:** `vdevops.in`, registered at Hostinger. As of 19 Nov 2026, DNS is on Hostinger nameservers and still serves the old Next.js site from Hostinger's Node web app. Rakesh will point it at Vercel and delete the old Hostinger setup.
 - **Do not** touch Vercel, Hostinger, DNS or GitHub settings from the browser. Rakesh does those himself.
 

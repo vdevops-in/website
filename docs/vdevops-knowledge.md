@@ -41,7 +41,8 @@ The old Next.js repo isn't visible to Claude's GitHub access, and its exact name
 
 ## Open items
 - [x] Confirm how vdevops.in is deployed today: Hostinger Node web app, DNS on Hostinger (checked 19 Nov 2026).
-- [ ] Import `vdevops-in/website` into Vercel and add `vdevops.in` and `www.vdevops.in`.
+- [x] Import `vdevops-in/website` into Vercel (done 23 Nov 2026).
+- [ ] Add `vdevops.in` and `www.vdevops.in` as domains in Vercel.
 - [ ] Set the DNS records Vercel shows, in Hostinger's DNS panel; check the new site is live.
 - [ ] Delete the old Hostinger web app and its Neon/Resend setup (after the new site is live).
 - [ ] Fill the three placeholders: ADPList link, price/session length, contact email.
